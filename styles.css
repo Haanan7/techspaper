@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500');
+
+* {
+    font-family: "Mirza", serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+  font-family: "Mirza", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   background-color:#205C72;
+    min-height: 100vh;
+}
+
+.club-info {
+  font-family: "Mirza", serif;
+    text-align:justify;
+    padding: 30px;
+    width:70%;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 90px;
+
+}
+
+.club-info  .content{
+    font-family: "Mirza", serif;
+opacity: 0.5; /* Initial opacity */
+transition: all 0.3s ease-in-out; /* Adds a smooth transition for the changes */
+} 
+
+.club-info:hover .content {
+    font-family: "Mirza", serif;
+    opacity: 1; /* Full opacity on hover */
+    transform: translateY(-20px);
+    transition: 0.5s; /* Smooth transition */
+}
+
+.club-title {
+    font-size: 3rem;
+  font-family: "Mirza", serif;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: right; 
+}
+
+.club-description {
+    text-align: right; 
+    font-family: "Mirza", serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    opacity: 0.5; /* Initial opacity */
+    transition: 0.5s; /* Smooth transition */
+    transform: translateY(20px); /* Start slightly lower */
+}
+
+.club-description:hover {
+    opacity: 1; /* Full opacity on hover */
+    transform: translateY(0px); /* Move it up to its original position */
+    transition: all 0.5s ease-in-out; /* Smooth transition on hover */
+    cursor: pointer;
+}
+
+
+
+
+.leaders-label {
+    font-family: "Mirza", serif;
+    text-align: right; 
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.container {
+    font-family: "Mirza", serif;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container .card {
+    font-family: "Mirza", serif;
+    text-align: right; 
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05); /* Transparent background */
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    border-radius: 15px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Blurred background effect */
+}
+
+.container .card .content {
+    font-family: "Mirza", serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5; /* Initial opacity */
+    transition: 0.5s; /* Smooth transition */
+}
+
+.container .card:hover .content {
+    opacity: 1; /* Full opacity on hover */
+    transform: translateY(-20px);
+}
+
+.container .card .content .imgBx {
+    font-family: "Mirza", serif;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circle shape */
+    overflow: hidden; /* Hide overflow */
+    border: 10px solid rgba(0, 0, 0, 0.25); /* Border with transparency */
+}
+
+.container .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Makes sure the image covers the entire area */
+}
+
+.container .card .content .contentBx h3 {
+    font-family: "Mirza", serif;
+    color: #fff; /* White text */
+    text-transform: uppercase; /* All uppercase */
+    letter-spacing: 2px; /* Space between letters */
+    font-weight: 500; /* Medium font weight */
+    font-size: 18px; /* Font size */
+    text-align: center; /* Center align text */
+    margin: 20px 0 10px; /* Margin for spacing */
+    line-height: 1.1em; /* Line height */
+}
+
+.container .card .content .contentBx h3 span {
+    font-family: "Mirza", serif;
+    font-size: 12px; /* Smaller font size for span */
+    font-weight: 300; /* Lighter font weight */
+    text-transform: initial; /* No text transformation */
+}
+
+/* Social icons initially hidden */
+.container .card .sci {
+    font-family: "Mirza", serif;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    opacity: 0; /* Initially hide the icons */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for showing icons */
+}
+.divider {
+    display: flex; /* Aligns items in a row */
+    justify-content: center; /* Center the content */
+    padding: 14px 0; /* Padding above and below for spacing */
+}
+
+.divider-separator {
+    width: 100px; /* Set a fixed width for the line */
+    height: 2px; /* Height of the separator */
+    background-color: var(--e-global-color-primary, #51acc7); /* Default color */
+}
+
+.club-info {
+    text-align: right; /* Ensure the text is right-aligned for the entire section */
+}
+
+.divider-a{
+    display: flex; /* Aligns items in a row */
+    justify-content: flex-end; /* Align the content to the right */
+    padding: 14px 0; /* Padding above and below for spacing */
+}
+
+.divider-separator-a {
+    width: 100px; /* Set a fixed width for the line */
+    height: 2px; /* Height of the separator */
+    background-color: var(--e-global-color-primary, #51acc7); /* Default color */
+    margin-left: 10px; /* Space between the title and the line */
+}
+/* Show the icons when hovering over the card */
+.container .card:hover .sci {
+    opacity: 1; /* Make icons visible */
+}
+
+/* Individual icons' animation */
+.container .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px); /* Moves the list item 40px down */
+    transition: 0.5s;
+    opacity: 0; /* Initially hidden */
+    transition-delay: calc(0.1s * var(--i)); /* Delay for each icon */
+}
+
+/* Animate the icons on hover */
+.container .card:hover .sci li {
+    transform: translateY(0px); /* Moves the list item back to original position */
+    opacity: 1; /* Make the icons visible */
+}
+
+/* Style for the LinkedIn icon */
+.container .card .sci li a {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Style for LinkedIn icon specifically */
+.container .card .sci li a i.fa-linkedin {
+    color: #0e76a8; /* LinkedIn's official blue color */
+}
+
+.members-container {
+    text-align: right; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.members-label {
+    text-align: right; 
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+footer {
+    font-family: "Mirza", serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #205C72;
+    color: white;
+    /* Text color */
+    padding: 20px 0;
+    /* Padding for top and bottom */
+    text-align: center;
+    /* Center the text */
+    width: 100%;
+    /* Ensure footer takes full width */
+    position: relative;
+    /* Ensure footer is positioned properly */
+  }
+  
+  .text-light{
+    padding-bottom: 10px;
+  }
+  
+  .footer-content {
+    
+    max-width: 1200px;
+    /* Max width for content */
+    margin: 0 auto;
+    /* Center the content */
+    padding: 0 20px;
+    /* Padding for left and right */
+  }
+  
+  .social-icons {
+    margin-bottom: 10px;
+    /* Space below icons */
+  }
+  
+  .social-icons a {
+    color: white;
+    /* Icon color */
+    /* Space between icons */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 100%;
+    /* Icon size */
+  }
+  
+  .social-icons a:hover {
+    color: #ddd;
+    /* Change color on hover */
+  }
+  

@@ -1,0 +1,290 @@
+html {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* Changed from center to flex-start for proper spacing */
+  min-height: 100vh;
+  /* Ensure it takes up the full height */
+  color: #fff;
+  margin: 0;
+  /* Ensure no margin on body */
+}
+.background{
+  background-image: url("./Assets/EmptyBackground.png");
+  
+}
+.header-container {
+  display:flex;
+  background-image: url("./Assets/EmptyBackground.png");
+  background-repeat: repeat-x;
+  width: 100%;
+}
+
+
+.header-image {
+  display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    max-width: 50em; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center container */
+   
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    max-height: 400px; /* Example to limit height on larger devices */
+}
+
+.container {
+    font-family: "Mirza", serif;
+    font-weight: 500;
+    font-style: normal;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  margin: 50px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  /* Set width to 100% for responsiveness */
+  max-width: 600px;
+  /* Limit max width for larger screens */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input[type="email"] {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="text"] { 
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.Submit-button {
+  background-color: #51acc7;
+  color: white;
+  padding: 12px 15px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Add transition for smooth effect */
+}
+
+
+.Archive-button{
+  background-color: #51acc7;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Add transition for smooth effect */
+
+}
+button:hover {
+  background-color: #5ec8e7;
+  /* Change background color on hover */
+  transform: scale(1.05);
+  /* Slightly increase size on hover */
+}
+.Archive-button:hover{
+  background-color:#205C72;
+
+}
+.social-icons {
+  margin-top: 10px;
+  }
+  .social-icons a {
+  margin: 0 5px; /* Adjusted margin for closer spacing */
+  text-decoration: none;
+  color: #007bff;
+  font-size: 10px; /* Smaller icon size */
+  }
+
+  .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards horizontally */
+    align-items: flex-start; /* Align items to the start to reduce vertical space */
+    padding: 20px;
+}
+
+.card {
+    max-width: 250px; /* تعيين الحد الأقصى للعرض */
+    margin: 10px; /* تقليل المسافة بين البطاقات */
+    border: 1px solid lightgray; /* حدود البطاقة */
+    transition: transform 0.3s, box-shadow 0.3s; /* تأثير الانتقال */
+    overflow: hidden; /* لإخفاء أي محتوى زائد */
+    display: flex; /* Enable flexbox for the card */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* رفع البطاقة عند التمرير */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* ظل عند التمرير */
+}
+
+.card-body {
+    padding: 15px; /* padding for card body */
+    opacity: 1; /* Always visible */
+    transition: opacity 0.3s; /* تأثير الانتقال للشفافية */
+    text-align: center; /* Center text inside the card body */
+}
+
+iframe {
+    border: none; /* إزالة الحدود من الإطار */
+    width: 100%; /* عرض الإطار */
+    height: 200px; /* ارتفاع الإطار */
+}
+nav {
+  font-family: "Mirza", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: azure;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  
+  z-index: 10;
+}
+
+.nav-item{
+  color: #fff;
+}
+nav .archive-nav {
+  font-family: "Mirza", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: azure;
+  /* Removed position: fixed */
+  width: 100%; /* Ensure full width */
+  background-color: rgba(0, 0, 0, 0.7); /* Background color for visibility */
+  z-index: 10; /* Keep it above other content */
+}
+.nav-icon {
+  float: right;
+  margin-right: 20px;
+  color: #fff;
+}
+.title-divider-container {
+  text-align: center; /* Center align the title and divider */
+  margin: 20px 0; /* Spacing above and below the entire container */
+}
+
+.card-body{
+  font-family: "Mirza", serif;
+  font-weight: 500;
+  font-size: 50;
+  font-style: normal;
+  color: darkslategrey;
+}
+.title-a {
+  font-family: "Mirza", serif;
+  font-weight: 500;
+  font-size: 50;
+  font-style: normal;
+  color: darkslategrey;
+  margin: 0; /* Reset margin */
+  padding-bottom: 0; /* Remove space between title and divider */
+  
+}
+
+.divider {
+  padding-top: 0; /* Remove padding on top */
+  padding-bottom: 14px; /* Padding below for spacing */
+}
+
+.divider-separator {
+  display: inline-block; /* Aligns it inline */
+  width: 100px; /* Width of the separator */
+  height: 2px; /* Height of the separator */
+  color: #205C72;
+  background-color: var(--e-global-color-primary, #51acc7); /* Default color */
+  border-style: solid; /* Border style */
+  border-width: 2px; /* Border width */
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 59%;
+   
+  }
+  
+}
+
+footer {
+  font-family: "Mirza", serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #205C72;
+  color: white;
+  /* Text color */
+  padding: 20px 0;
+  /* Padding for top and bottom */
+  text-align: center;
+  /* Center the text */
+  width: 100%;
+  /* Ensure footer takes full width */
+  position: relative;
+  /* Ensure footer is positioned properly */
+}
+
+.text-light{
+  padding-bottom: 10px;
+}
+
+.footer-content {
+  
+  max-width: 1200px;
+  /* Max width for content */
+  margin: 0 auto;
+  /* Center the content */
+  padding: 0 20px;
+  /* Padding for left and right */
+}
+
+.social-icons {
+  margin-bottom: 10px;
+  /* Space below icons */
+}
+
+.social-icons a {
+  color: white;
+  /* Icon color */
+  /* Space between icons */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 100%;
+  /* Icon size */
+}
+
+.social-icons a:hover {
+  color: #ddd;
+  /* Change color on hover */
+}
