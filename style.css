@@ -18,12 +18,12 @@ body {
   /* Ensure no margin on body */
 }
 .background{
-  background-image: url("./Assets/EmptyBackground.png");
+  background-image: url("./EmptyBackground.png");
   
 }
 .header-container {
   display:flex;
-  background-image: url("./Assets/EmptyBackground.png");
+  background-image: url("./EmptyBackground.png");
   background-repeat: repeat-x;
   width: 100%;
 }
