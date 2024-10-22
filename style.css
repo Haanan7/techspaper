@@ -288,3 +288,17 @@ footer {
   color: #ddd;
   /* Change color on hover */
 }
+@media (max-width: 576px) {
+  .nav {
+
+      flex-direction: column; /* Stack nav items vertically */
+      align-items: center;
+  }
+  .nav-link {
+      padding: 10px;
+  }
+  .container-cards .row {
+      margin-left: 0; /* Remove left margin */
+      margin-right: 0; /* Remove right margin */
+  }
+}
