@@ -278,6 +278,16 @@ nav .archive-nav {
     width: 59%;
    
   }
+   .nav {
+    display: flex; /* Ensures nav content is flexible */
+   justify-content: space-around; /* Horizontally distribute the nav items */
+   flex-direction: row; /* Horizontal alignment */
+   align-items: center;
+   }
+   .nav-link {
+    padding: 10px;
+    margin: 0; /* Removes any side margins */
+   }
   
 }
 
@@ -333,14 +343,16 @@ footer {
   /* Change color on hover */
 }
 @media (max-width: 576px) {
-  .nav {
-
-      flex-direction: column; /* Stack nav items vertically */
-      align-items: center;
-  }
-  .nav-link {
-      padding: 10px;
-  }
+   .nav {
+    display: flex; /* Ensures nav content is flexible */
+   justify-content: space-around; /* Horizontally distribute the nav items */
+   flex-direction: row; /* Horizontal alignment */
+   align-items: center;
+   }
+   .nav-link {
+    padding: 10px;
+    margin: 0; /* Removes any side margins */
+   }
   .container-cards .row {
       margin-left: 0; /* Remove left margin */
       margin-right: 0; /* Remove right margin */
