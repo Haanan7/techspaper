@@ -101,7 +101,14 @@ body {
   max-width: 600px;
   /* Limit max width for larger screens */
 }
-
+.row > * {
+  flex-shrink: 0; /* Keep this to prevent shrinking */
+  width: auto; /* Change this from 100% to auto */
+  max-width: 100%; /* Keep this to ensure responsiveness */
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
 h1 {
   margin-bottom: 20px;
 }
