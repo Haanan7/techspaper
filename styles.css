@@ -231,7 +231,7 @@ transition: all 0.3s ease-in-out; /* Adds a smooth transition for the changes */
 
 /* Style for LinkedIn icon specifically */
 .container .card .sci li a i.fa-linkedin {
-    color: #0e76a8; /* LinkedIn's official blue color */
+     color: #fff;/* LinkedIn's official blue color */
 }
 
 .members-container {
