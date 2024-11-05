@@ -272,6 +272,34 @@ nav .archive-nav {
   
 }
 
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.btn-custom {
+  background-color: darkslategrey;
+  font-family: 'Mirza', serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: azure;
+  padding: 7px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #667479ec;
+}
+
+.button-group .btn-custom + .btn-custom {
+  margin-left: 10px; /* Space between buttons */
+}
+
+
 .divider {
   padding-top: 0; /* Remove padding on top */
   padding-bottom: 14px; /* Padding below for spacing */
