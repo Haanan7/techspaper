@@ -148,7 +148,10 @@ input[type="text"] {
   transition: background-color 0.3s ease, transform 0.3s ease;
   /* Add transition for smooth effect */
 }
+.btn-primary{
+  background-color: #205c72;
 
+}
 
 .Archive-button{
   background-color: #51acc7;
