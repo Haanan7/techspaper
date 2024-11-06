@@ -233,7 +233,15 @@ nav {
   
   z-index: 10;
 }
+ .btn-primary {
+            background-color: #205c72; /* Change background color */
+            border-color: #205c72; /* Change border color */
+        }
 
+        .btn-primary:hover {
+            background-color: #1a4f5a; /* Darker shade for hover effect */
+            border-color: #1a4f5a; /* Darker border color for hover */
+        }
 .nav-item{
   color: #fff;
 }
