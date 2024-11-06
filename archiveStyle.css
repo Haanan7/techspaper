@@ -151,7 +151,7 @@ input[type="text"] {
 
 
 .Archive-button{
-  background-color: #51acc7;
+  /* background-color: #51acc7; */ 
   color: white;
   padding: 12px 20px;
   border: none;
@@ -279,7 +279,7 @@ nav .archive-nav {
 }
 
 .btn-custom {
-  background-color: darkslategrey;
+  /* background-color: darkslategrey; */
   font-family: 'Mirza', serif;
   font-weight: 500;
   font-size: 1.8rem;
