@@ -150,7 +150,6 @@ transition: all 0.3s ease-in-out; /* Adds a smooth transition for the changes */
     font-family: "Mirza", serif;
     color: #fff; /* White text */
     text-transform: uppercase; /* All uppercase */
-    letter-spacing: 2px; /* Space between letters */
     font-weight: 500; /* Medium font weight */
     font-size: 18px; /* Font size */
     text-align: center; /* Center align text */
