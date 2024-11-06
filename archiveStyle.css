@@ -288,12 +288,13 @@ nav .archive-nav {
 
 .btn-custom {
   /* background-color: darkslategrey; */
+  background-color: gray;
   font-family: 'Mirza', serif;
   font-weight: 500;
   font-size: 1.8rem;
   color: azure;
   padding: 7px 20px;
-  border-radius: 8px;
+  border-radius: 30px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
