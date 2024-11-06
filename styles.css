@@ -300,11 +300,11 @@ footer {
     /* Change color on hover */
   }
 .scroll-container {
-    overflow: hidden; /* Prevents overflow */
-    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+    height: 100vh;
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    align-items: center;
+    justify-content: center;
 }
 
 .club-description {
@@ -313,16 +313,17 @@ footer {
     animation: fadeInUp 1s forwards; /* Animation */
     line-height: 1.6;
     margin-bottom: 1em;
-    text-align: right; /* Align text to the right */
-    direction: rtl; /* Set text direction to right-to-left */
+    text-align: right;
+    direction: rtl; /* Right-to-left text */
+    transition: opacity 0.5s ease-in-out; /* Transition for opacity */
 }
 
 .highlight {
-    color: #ffcc00; /* Light color for the text */
-    font-weight: bold; /* Make it bold if desired */
-    background-color: rgba(255, 204, 0, 0.2); /* Optional: light background color */
-    padding: 0 4px; /* Optional: add some padding for a better effect */
-    border-radius: 3px; /* Optional: rounded corners */
+    color: #ffcc00; /* Highlight color */
+    font-weight: bold;
+    background-color: rgba(255, 204, 0, 0.2); /* Optional background */
+    padding: 0 4px;
+    border-radius: 3px;
 }
 
 @keyframes fadeInUp {
@@ -331,4 +332,17 @@ footer {
         transform: translateY(0); /* Move to original position */
     }
 }
-  
+
+/* Hover effects for desktop */
+.club-info:hover .club-description {
+    opacity: 1; /* Full opacity on hover */
+    transform: translateY(0); /* Reset translation */
+}
+
+/* Media queries for mobile responsiveness */
+@media (hover: none) { /* Removes hover effects on touch devices */
+    .club-info .club-description {
+        opacity: 1; /* Ensure visibility */
+        transform: translateY(0); /* Reset translation */
+    }
+}
