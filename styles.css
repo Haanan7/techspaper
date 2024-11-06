@@ -300,7 +300,6 @@ footer {
   }
 .scroll-container {
     overflow: hidden;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,7 +317,7 @@ footer {
 }
 
 .highlight {
-    color: #ffcc00; /* Highlight color */
+    color: #ced8d9; /* Highlight color */
     font-weight: bold;
     background-color: rgba(255, 204, 0, 0.2); /* Optional background */
     padding: 0 4px;
